@@ -1,1 +1,7 @@
-var saveHi = 'tiene que tronar';
+var sayHi = 'tiene que tronar';
+
+function getHi() {
+  return sayHi;
+}
+
+getHi();

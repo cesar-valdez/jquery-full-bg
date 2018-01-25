@@ -4,7 +4,7 @@
   "description": "jQuery plugin para cambiar el fondo de imágenes en tamaño entero y forma aleatoria.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/cesar-valdez/jquery-full-bg#readme",
   "devDependencies": {
-    "eslint": "4.16.0"
-  }
+    "eslint": "4.16.0",
+    "pre-commit": "1.2.2"
+  },
+  "pre-commit":[
+    "test"
+  ]
 }
