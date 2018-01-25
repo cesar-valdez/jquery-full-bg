@@ -1,0 +1,28 @@
+{
+  "name": "jquery-full-bg",
+  "version": "0.0.0-development",
+  "description": "jQuery plugin para cambiar el fondo de imágenes en tamaño entero y forma aleatoria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar-valdez/jquery-full-bg.git"
+  },
+  "keywords": [
+    "jquery",
+    "unsplash",
+    "fullbackground",
+    "plugin"
+  ],
+  "author": "Cesar Valdez <cesar.valdez1095@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesar-valdez/jquery-full-bg/issues"
+  },
+  "homepage": "https://github.com/cesar-valdez/jquery-full-bg#readme",
+  "devDependencies": {
+    "eslint": "4.16.0"
+  }
+}
