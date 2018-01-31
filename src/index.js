@@ -6,6 +6,7 @@
 */
 
 (function($){
+
   $.fn.FullBg = function(){
     $(this).css({
       width:'100%',
