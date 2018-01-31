@@ -1,7 +1,7 @@
 language: node_js
 nodejs: 7
 script:
-- npm test
+  - npm test
 after_success:
--npm run report-coverage
+  - npm run report-coverage
 
