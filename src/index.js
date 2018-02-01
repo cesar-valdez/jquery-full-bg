@@ -7,11 +7,16 @@
 
 (function($){
 
-  $.fn.FullBg = function(){
+  $.fn.FullBg = function(options){
+    options = options || {};
+
     $(this).css({
       width:'100%',
       height:'100vh',
-      minHeight:'800px'
+      minHeight: options.minHeight || '800px',
+      backgroundSize: options.backgroundSize || 'cover',
+      backgroundPosition: options.backgroundPosition || 'center',
+      backgroundColor: options.backgroundColor || 'black'
     });
     return $(this);
   };
