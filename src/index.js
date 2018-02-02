@@ -5,7 +5,15 @@
 * @license MIT
 */
 
-(function($){
+(function(global, $){
+
+  function FullBg(){
+
+  }
+
+  FullBg.prototype.setup = function(clientId){
+    this.clientId = clientId;
+  };
 
   $.fn.FullBg = function(options){
     options = options || {};
@@ -18,6 +26,25 @@
       backgroundPosition: options.backgroundPosition || 'center',
       backgroundColor: options.backgroundColor || 'black'
     });
-    return $(this);
+
+    var def = $.Deferred();
+
+    var $self = $(this);
+    $.ajax({
+      url:'https://api.unsplash.com/photos/random?client_id=' + global.fullBg.clientId,
+      success: function(photo){
+        $self.css('backgroundImage','url(' + photo.urls.regular + ')');
+        def.resolve($self);
+      },
+      error: function(){
+        $self.css('backgroundImage','url('+ options.backgroundImage + ')');
+        def.reject($self);
+      }
+    });
+
+    return def.promise();
   };
-})(jQuery);
+
+  global.fullBg = new FullBg();
+
+})(window, jQuery);
