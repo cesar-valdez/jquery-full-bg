@@ -1,0 +1,56 @@
+{
+  "name": "jquery-full-bg",
+  "version": "1.0.0",
+  "description": "jQuery plugin para cambiar el fondo de imágenes en tamaño entero y forma aleatoria.",
+  "main": "src/index.js",
+  "scripts": {
+    "pretest": "eslint src",
+    "test": "nyc mocha",
+    "test:watch": "mocha --watch",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar-valdez/jquery-full-bg.git"
+  },
+  "keywords": [
+    "jquery",
+    "unsplash",
+    "fullbackground",
+    "plugin"
+  ],
+  "author": "Cesar Valdez <cesar.valdez1095@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesar-valdez/jquery-full-bg/issues"
+  },
+  "homepage": "https://github.com/cesar-valdez/jquery-full-bg#readme",
+  "devDependencies": {
+    "codecov": "3.0.0",
+    "dotenv": "5.0.0",
+    "eslint": "4.16.0",
+    "jquery": "3.3.1",
+    "jsdom": "11.6.1",
+    "jsdom-global": "3.0.2",
+    "mocha": "5.0.0",
+    "nyc": "11.4.1",
+    "pre-commit": "1.2.2"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "reporter": [
+      "text",
+      "lcov"
+    ]
+  },
+  "dependencies": {
+    "expect.js": "0.3.1"
+  }
+}
