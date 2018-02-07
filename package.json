@@ -1,6 +1,6 @@
 {
   "name": "jquery-full-bg",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "jQuery plugin para cambiar el fondo de imágenes en tamaño entero y forma aleatoria.",
   "main": "index.js",
   "scripts": {

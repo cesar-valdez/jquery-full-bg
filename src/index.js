@@ -1,6 +1,6 @@
 /*
 * jquery-full-bg
-* @version 0.0.0-development
+* @version 1.0.0
 * @Cesar Valdez
 * @license MIT
 */
