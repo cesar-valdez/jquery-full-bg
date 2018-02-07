@@ -60,13 +60,13 @@ describe('jquery-full-bg', function(){
       });
   });
 
-  // it('should set default image', function(){
-  //   window.fullBg.setup('123');
-  //   return $section.FullBg({
-  //     backgroundImage: 'path/image.jpg',
-  //   })
-  //     .catch(function($this){
-  //       expect($this.css('backgroundImage')).to.contain('path/image.jpg');
-  //     });
-  // });
+  it('should set default image', function(){
+    window.fullBg.setup('CLIENT_ID');
+    return $section.FullBg({
+      backgroundImage: 'path/image.jpg',
+    })
+      .catch(function($this){
+        expect($this.css('backgroundImage')).to.contain('path/image.jpg');
+      });
+  });
 });

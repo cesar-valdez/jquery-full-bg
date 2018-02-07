@@ -34,11 +34,11 @@
       url:'https://api.unsplash.com/photos/random?client_id=' + global.fullBg.clientId,
       success: function(photo){
         $self.css('backgroundImage','url(' + photo.urls.regular + ')');
-        def.resolve($self);
+        return def.resolve($self);
       },
       error: function(){
         $self.css('backgroundImage','url('+ options.backgroundImage + ')');
-        def.reject($self);
+        return def.reject($self);
       }
     });
 
