@@ -13,7 +13,7 @@ npm install --save jquery-full-bg
 <script src="/node_modules/jquery-full-bg/src/index.js"></script>
 ```
 
-Before using the plugin you need register as developer then you must put the **CLIENT_ID** to be able to get photos Unsplash API.
+Before using the plugin you need register as developer then you must set the **CLIENT_ID** to be able to get photos Unsplash API.
 
 ```js
 window.fullBg.setup(clientId);
