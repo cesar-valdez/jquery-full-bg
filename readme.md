@@ -31,7 +31,7 @@ $(document).ready(function(){
     backgroundSize:'contain', // cover
     backgroundPosition:'top center', // center
     backgroundColor:'red', // black
-    backgroundImage:'path/img.jpg,' //in case that the endpoint responses with an error
+    backgroundImage:'path/img.jpg', //in case that the endpoint responses with an error
     }
     $('#custom-id').FullBg(options);
 });
